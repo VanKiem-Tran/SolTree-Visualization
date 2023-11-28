@@ -1,8 +1,9 @@
-import { useColorMode } from '@chakra-ui/react';
+/* eslint-disable etc/no-commented-out-code */
+// import { useColorMode } from '@chakra-ui/react';
 import Image from 'next/image';
 
 const MoralisLogo = () => {
-  const { colorMode } = useColorMode();
+  // const { colorMode } = useColorMode();
 
   return (
     <Image
