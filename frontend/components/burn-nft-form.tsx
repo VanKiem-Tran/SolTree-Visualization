@@ -92,39 +92,6 @@ export function BurnNFTForm() {
     }
   }
 
-  useEffect(() => {
-    if (publicKey && network) {
-      setLoading(true)
-      readAllNFTs(publicKey.toBase58(), network)
-        .then((response) => {
-          if (response.success) {
-            setNFTs(response.result.nfts)
-            form.reset({
-              merkle_tree: "",
-              nft_address: response.result.nfts?.[0].mint,
-              network: "devnet",
-            })
-          } else {
-            toast({
-              variant: "error",
-              title: "Error",
-              description: response.message ?? "Unknown error",
-            })
-          }
-        })
-        .catch((error: any) => {
-          toast({
-            variant: "error",
-            title: "Error",
-            description: error?.message ?? "Unknown error",
-          })
-        })
-        .finally(() => {
-          setLoading(false)
-        })
-    }
-  }, [publicKey, network, setLoading, setNFTs, form])
-
   return (
     <div className="max-w-xl mx-auto">
       <Form {...form}>
