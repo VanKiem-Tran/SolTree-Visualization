@@ -10,7 +10,7 @@ import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, For
 import { Input } from "@/components/ui/input"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Networks } from "@/config/enum"
-import { burnNFT, readAllNFTs } from "@/libs/shyft"
+import { burnNFT } from "@/libs/shyft"
 import { Nft } from "@/types"
 import ConnectWalletButton from "./connect-wallet-button"
 import { NetworkSelect } from "./network-select"
