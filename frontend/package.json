@@ -18,8 +18,7 @@
     "e2e:headless": "playwright test",
     "e2e:ui": "playwright test --ui",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "postinstall": "npx patch-package -y",
-    "preinstall": "npx only-allow yarn"
+    "postinstall": "npx patch-package -y"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.1.1",
