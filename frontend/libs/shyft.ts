@@ -22,6 +22,7 @@ export function createTree(body: CreateMerkleTreeRequestBody) {
     method: "POST",
     headers: {
       "content-type": "application/json",
+      "ngrok-skip-browser-warning": "69420",
     },
     body: JSON.stringify(body),
   })
@@ -32,6 +33,7 @@ export function mintNFT(body: MintNFTRequestBody) {
     method: "POST",
     headers: {
       "content-type": "application/json",
+      "ngrok-skip-browser-warning": "69420",
     },
     body: JSON.stringify(body),
   })
@@ -62,6 +64,7 @@ export function getCollectionsByOwner(addressOwner: string) {
     method: "GET",
     headers: {
       "content-type": "application/json",
+      "ngrok-skip-browser-warning": "69420",
     },
   })
 }
@@ -71,6 +74,7 @@ export function getMerkleTreeByOwner(addressOwner: string) {
     method: "GET",
     headers: {
       "content-type": "application/json",
+      "ngrok-skip-browser-warning": "69420",
     },
   })
 }
@@ -80,6 +84,7 @@ export function getNftsByOwner(addressOwner: string) {
     method: "GET",
     headers: {
       "content-type": "application/json",
+      "ngrok-skip-browser-warning": "69420",
     },
   })
 }
@@ -89,6 +94,7 @@ export function readAllNFTs(wallet: string) {
     method: "GET",
     headers: {
       "content-type": "application/json",
+      "ngrok-skip-browser-warning": "69420",
     },
   })
 }
@@ -123,6 +129,7 @@ export function uploadMetadata(metadata: UploadMetadataRequestBody) {
     method: "POST",
     headers: {
       "content-type": "application/json",
+      "ngrok-skip-browser-warning": "69420",
     },
     body: JSON.stringify(metadata),
   })
